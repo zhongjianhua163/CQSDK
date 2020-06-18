@@ -98,6 +98,18 @@
     <ClInclude Include="GroupInfo.h">
       <Filter>信息</Filter>
     </ClInclude>
+    <ClInclude Include="SystemGroupBanEvent.h">
+      <Filter>事件</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupUploadEvent.h">
+      <Filter>事件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemGroupMemberIncreaseEvent.h">
+      <Filter>事件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemGroupMemberDecreaseEvent.h">
+      <Filter>事件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnonymousInfo.cpp">
@@ -177,6 +189,24 @@
     </ClCompile>
     <ClCompile Include="toolWin.cpp">
       <Filter>工具</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendInfo.cpp">
+      <Filter>信息</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemGroupBanEvent.cpp">
+      <Filter>事件</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupUploadEvent.cpp">
+      <Filter>事件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemGroupMemberIncreaseEvent.cpp">
+      <Filter>事件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemGroupMemberDecreaseEvent.cpp">
+      <Filter>事件</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupInfo.cpp">
+      <Filter>信息</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

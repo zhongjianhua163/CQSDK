@@ -27,8 +27,14 @@
 //第三层,同上
 #include "API.h"
 #include "FriendAddEvent.h"
+#include "GroupUploadEvent.h"
 #include "MsgEvent.h"
 #include "RequestBasicEvent.h"
+#include "SystemGroupMemberDecreaseEvent.h"
+#include "SystemGroupMemberIncreaseEvent.h"
+#include "SystemGroupAdminEvent.h"
+#include "SystemGroupBanEvent.h" //9.25新增
+
 
 //第四层,同上
 #include "DiscussMsgEvent.h"
@@ -37,3 +43,8 @@
 #include "PrivateMsgEvent.h"
 #include "RequestAddFriendEvent.h"
 #include "RequestAddGroupEvent.h"
+
+
+#ifdef CQDEBUG
+#include "debug.h"
+#endif // DEBUG

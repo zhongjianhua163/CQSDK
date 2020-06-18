@@ -30,6 +30,7 @@
     <ClInclude Include="GroupInfo.h" />
     <ClInclude Include="GroupMemberInfo.h" />
     <ClInclude Include="GroupMsgEvent.h" />
+    <ClInclude Include="GroupUploadEvent.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="LogStream.h" />
     <ClInclude Include="MsgEvent.h" />
@@ -41,6 +42,9 @@
     <ClInclude Include="StatusEvent.h" />
     <ClInclude Include="StrangerInfo.h" />
     <ClInclude Include="SystemGroupAdminEvent.h" />
+    <ClInclude Include="SystemGroupBanEvent.h" />
+    <ClInclude Include="SystemGroupMemberDecreaseEvent.h" />
+    <ClInclude Include="SystemGroupMemberIncreaseEvent.h" />
     <ClInclude Include="tool.h" />
     <ClInclude Include="toolWin.h" />
     <ClInclude Include="Unpack.h" />
@@ -56,8 +60,11 @@
     <ClCompile Include="DEBUG.cpp" />
     <ClCompile Include="DiscussMsgEvent.cpp" />
     <ClCompile Include="FriendAddEvent.cpp" />
+    <ClCompile Include="FriendInfo.cpp" />
+    <ClCompile Include="GroupInfo.cpp" />
     <ClCompile Include="GroupMemberInfo.cpp" />
     <ClCompile Include="GroupMsgEvent.cpp" />
+    <ClCompile Include="GroupUploadEvent.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="LogStream.cpp" />
     <ClCompile Include="MsgEvent.cpp" />
@@ -69,6 +76,9 @@
     <ClCompile Include="StatusEvent.cpp" />
     <ClCompile Include="StrangerInfo.cpp" />
     <ClCompile Include="SystemGroupAdminEvent.cpp" />
+    <ClCompile Include="SystemGroupBanEvent.cpp" />
+    <ClCompile Include="SystemGroupMemberDecreaseEvent.cpp" />
+    <ClCompile Include="SystemGroupMemberIncreaseEvent.cpp" />
     <ClCompile Include="tool.cpp" />
     <ClCompile Include="toolWin.cpp" />
     <ClCompile Include="Unpack.cpp" />
@@ -94,7 +104,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -126,7 +136,8 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation>true</BrowseInformation>
-      <ProgramDataBaseFileName>$(SolutionDir)CQ_LIB\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)CQ_LIB\$(ProjectName)_DEBUG.pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -140,11 +151,12 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ProgramDataBaseFileName>$(SolutionDir)CQ_LIB\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
